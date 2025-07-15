@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee management system</title>
+</head>
+
+<body>
+    <h1>XYZ corpration employee management system</h1>
+    <h2>Developer assessment task</h2>
+    <h3>Task instructions</h3>
+    <p>complete this complex html form with proper structure,validation attributes and table layouts,pay attention to
+        accessbility,HTML and form organization</p>
+    <ol>
+        <li>fill out this form with proper attributes</li>
+        <li>review the complex table</li>
+        <li>understand the department hierarchy</li>
+        <li>complex the performnce review matrix table</li>
+    </ol>
+
+    <h4>Employee registration form</h4>
+    <form action="../Learning/11-thankyou.html">
+<p>personal information</p>
+    <table border="1">
+        <thead>
+            <tr>
+
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <label for="id">employee id:</label>
+                </td>
+                <td>
+                    <input type="text" id="id" placeholder="abc123">
+                </td>
+                <td>
+                    <label for="hire date">hire date:</label>
+                </td>
+                <td>
+                    <input type="date" id="hire date">
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="firstname">first name:</label>
+                </td>
+                <td><input type="text" id="firstname"></td>
+                <td> <label for="lastname">last name:</label>
+                </td>
+                <td><input type="text" id="lastname"></td>
+            </tr>
+            <tr>
+                <td> <label for="email">email:</label>
+                </td>
+                <td><input type="email" id="email"></td>
+                <td> <label for="ph#">phone:</label>
+                </td>
+                <td><input type="number" id="ph#"></td>
+            </tr>
+            <tr>
+                <td> <label for="dob">date of birth:</label>
+                </td>
+                <td><input type="date" id="dob"></td>
+                <td> <label for="ssn">ssn (last 4):</label>
+                </td>
+                <td><input type="number" id="ssn"></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>address information</p>
+    <table border="1">
+        <thead>
+            <tr>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2"> <label for="streetaddress">street address:</label>
+                </td>
+                <td colspan="2"><input type="text" id="streetaddress"></td>
+            </tr>
+            <tr>
+                <td> <label for="city">city:</label>
+                </td>
+                <td><input type="text" id="city"></td>
+                <td> <label for="state">state:</label>
+                </td>
+                <td><select name="state" id="state">
+                        <option value="select state">select state</option>
+                        <option value=""></option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td> <label for="zipcode">zipcode:</label>
+                </td>
+                <td><input type="text" id="zipcode"></td>
+                <td> <label for="country">country:</label>
+                </td>
+                <td><input type="text" id="country"></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>employment details</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <td rowspan="2"> <label for="">department</label></td>
+                <td> <label for="it">information technology</label>
+                    <input type="radio" name="department" id="it">
+                </td>
+                <td> <label for="hr">human resources</label>
+                    <input type="radio" name="department" id="hr">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="f">finance</label>
+                    <input type="radio" name="department" id="f">
+                </td>
+                <td><label for="m">marketing</label>
+                    <input type="radio" name="department" id="m">
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="position">position:</label></td>
+                <td>
+                    <select name="position" id="position">
+                        <option value="junior developer">junior developer</option>
+                        <option value="senior developer">senior developer</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="as">annual salary:</label>
+                </td>
+                <td>
+                    <input type="number" id="as">
+                </td>
+                <td>
+                    <label for="et">employment type:</label>
+                </td>
+                <td>
+                    <select name="employment type" id="et">
+                        <option value="full time">full time</option>
+                        <option value="part time">part time</option>
+                    </select>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <p>skills & qualification</p>
+    <table border="1">
+        <thead>
+            <tr>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3"><label for="">technical skills</label></td>
+                <td> <label for="html">html</label>
+                    <input type="radio" name="skills" id="html">
+                </td>
+                <td> <label for="css">css</label>
+                    <input type="radio" name="skills" id="css">
+                </td>
+                <td> <label for="python">python</label>
+                    <input type="radio" name="skills" id="python">
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="java">java</label>
+                    <input type="radio" name="skills" id="java">
+                </td>
+                <td> <label for="sql">sql</label>
+                    <input type="radio" name="skills" id="sql">
+                </td>
+                <td> <label for="react">react</label>
+                    <input type="radio" name="skills" id="react">
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="node.js">node.js</label>
+                    <input type="radio" name="skills" id="node.js">
+                </td>
+                <td> <label for="aws">aws</label>
+                    <input type="radio" name="skills" id="aws">
+                </td>
+                <td> <label for="docker">docker</label>
+                    <input type="radio" name="skills" id="docker">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="yoe">years of experiance:</label></td>
+                <td><input type="number" id="yoe"></td>
+                <td><label for="">0 years</label></td>
+                <td><label for="">education level:</label></td>
+            </tr>
+            <tr>
+                <td><label for="ru">resume upload:</label></td>
+                <td> <input type="file" name="" id="ru"></td>
+                <td> <select name="" id="">
+                        <option value="select education">select education</option>
+                        <option value="part time">part time</option>
+                    </select></td>
+            </tr>
+
+        </tbody>
+    </table>
+    <p>additional information</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <td><label for="ec">emergency contact:</label></td>
+                <td><input type="number" id="ec"></td>
+                <td><label for="ep">emergency phone:</label></td>
+                <td><input type="number" id="ep"></td>
+            </tr>
+            <tr>
+                <td> <label for="comment">Additional comments:</label></td>
+                <td colspan="3"> <textarea name="comment" id="comment" placeholder="any additional information...."
+                        cols="80"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="sd"> prefferd start date:</label></td>
+                <td><input type="date" id="sd"></td>
+                <td><label for="s">preffered shift:</label></td>
+                <td> <select name="" id="s">
+                        <option value="Day (9am-5pm)">Day (9am-5pm)</option>
+                        <option value="Night (6pm-1am)">Night (6pm-1am)</option>
+                    </select></td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <input type="submit" value="submit application">
+    <input type="reset" value="reset form">
+    <input type="button" value="save draft">
+    </form>
+    
+    <p>current employee database</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">employee id</th>
+                <th rowspan="2">name</th>
+                <th colspan="3">department information</th>
+                <th colspan="2">performance matrices</th>
+                <th rowspan="2">status</th>
+            </tr>
+            <tr>
+                <th>department</th>
+                <th>position</th>
+                <th>manager</th>
+                <th>Q3 score</th>
+                <th>Q4 score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>abc 1234</td>
+                <td>johnsmith</td>
+                <td rowspan="3">information technology</td>
+                <td>senior developer</td>
+                <td rowspan="3">johnson</td>
+                <td>95</td>
+                <td>97</td>
+                <td>active</td>
+            </tr>
+            <tr>
+                <td>abc1235</td>
+                <td>devia</td>
+                <td>developer</td>
+                <td>88</td>
+                <td>92</td>
+                <td>active</td>
+            </tr>
+            <tr>
+                <td>abc1235</td>
+                <td>devia</td>
+                <td>developer</td>
+                <td>88</td>
+                <td>92</td>
+                <td>active</td>
+            </tr>
+            <tr>
+                <td>abc 1234</td>
+                <td>johnsmith</td>
+                <td rowspan="2">human resources</td>
+                <td>hr manager</td>
+                <td rowspan="2">robert brown</td>
+                <td>93</td>
+                <td>94</td>
+                <td>active</td>
+            </tr>
+            <tr>
+                <td>abc1235</td>
+                <td>devia</td>
+                <td>hr cordinator</td>
+                <td>88</td>
+                <td>92</td>
+                <td>active</td>
+            </tr>
+            <tr>
+                <td>fin 3001</td>
+                <td>maria</td>
+                <td>finance</td>
+                <td>financial analyst</td>
+                <td>white</td>
+                <td>91</td>
+                <td>93</td>
+                <td>active</td>
+            </tr>
+            <tr>
+                <td>mkt 4001</td>
+                <td>alex thompson</td>
+                <td rowspan="2">marketing</td>
+                <td>marketing manager</td>
+                <td rowspan="2">kevin miller</td>
+                <td>89</td>
+                <td>91</td>
+                <td>active</td>
+            </tr>
+            <tr>
+                <td>mkt 4002</td>
+                <td>rachel greece</td>
+                <td>marketing spcealist</td>
+                <td>85</td>
+                <td>98</td>
+                <td>on leave</td>
+            </tr>
+            <tr>
+                <td colspan="5">total employees:8</td>
+                <td>avg Q3:89</td>
+                <td>avg Q4:91</td>
+                <td>active:?</td>
+            </tr>
+        </tbody>
+    </table>
+    <h5>Department hierarchy</h5>
+    <p>organizational structure</p>
+    <ul>
+        <li>executive level</li>
+        <ul>
+            <li>ceo richard anderson</li>
+            <li>coo particia devis</li>
+            <li>cto mitchel chang </li>
+        </ul>
+        <li>information technology department</li>
+        <ul>
+            <li>it-director sarah johnson</li>
+            <ul>
+                <li>development team</li>
+                <ol>
+                    <li>senior developer-john smith</li>
+                    <li>junior developer-milky</li>
+                    <li>developer-lisa</li>
+                </ol>
+                <li>infrastructure team</li>
+                <ol>
+                    <li>system administrator-tom wilson</li>
+                    <li>network engineer-amy rodriguez</li>
+                </ol>
+
+            </ul>
+        </ul>
+        <li>human resource department</li>
+        <ul>
+            <li>HR director-robert brown</li>
+            <ul>
+                <li>development team</li>
+                <ol>
+                    <li>HR-manager</li>
+                    <li>HR-cordinator</li>
+                </ol>
+                <li>employee relations</li>
+                <ol>
+                    <li>benefits administrator-moore</li>
+                </ol>
+
+            </ul>
+        </ul>
+        <li>finance department</li>
+        <ul>
+            <li>finance-director jenifer white</li>
+            <ul>
+                <li>accounting team</li>
+                <ol>
+                    <li>senior accoutant-john smith</li>
+                    <li>accoutant payable-milky</li>
+                    <li>accoutant receiveable-linda johnson</li>
+                </ol>
+            </ul>
+        </ul>
+    </ul>
+    <h6>performance review matrix</h6>
+    <p>annual performance review-2024</p>
+    <table  border="1">
+        <tr>
+            <th rowspan="3">employee</th>
+            <th colspan="6">performance categories</th>
+            <th rowspan="3">overall rating</th>
+        </tr>
+        <tr>
+            <th colspan="2">technical skills</th>
+            <th colspan="2">softskills</th>
+            <th colspan="2">leadership</th>
+        </tr>
+        <tr>
+            <th>self rating</th>
+            <th>manager rating</th>
+            <th>self rating</th>
+            <th>manager rating</th>
+            <th>self rating</th>
+            <th>manager rating</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>johnsmith</td>
+                <td>9</td>
+                <td>9</td>
+                <td>8</td>
+                <td>9</td>
+                <td>8</td>
+                <td>9</td>
+                <td rowspan="2">exceeds expectations</td>
+            </tr>
+            <tr>
+                <td>mike davis</td>
+                <td>8</td>
+                <td>8</td>
+                <td>6</td>
+                <td>7</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>lisa chen</td>
+                <td>7</td>
+                <td>7</td>
+                <td>8</td>
+                <td>8</td>
+                <td>5</td>
+                <td>6</td>
+                <td>meets expectations</td>
+            </tr>
+            <tr>
+                <td>ema wilson</td>
+                <td>6</td>
+                <td>7</td>
+                <td>9</td>
+                <td>9</td>
+                <td>9</td>
+                <td>9</td>
+                <td rowspan="2">exceeds expectations</td>
+            </tr>
+             <tr>
+                <td>david lee</td>
+                <td>6</td>
+                <td>6</td>
+                <td>8</td>
+                <td>8</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>lisa chen</td>
+                <td>8</td>
+                <td>8</td>
+                <td>7</td>
+                <td>8</td>
+                <td>7</td>
+                <td>7</td>
+                <td>meets expectations</td>
+            </tr>
+            <tr>
+                <td>department average</td>
+                <td colspan="2">7.5</td>
+                <td colspan="2">8.2</td>
+                <td colspan="2">7.1</td>
+                <td>7.6</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h7><strong>Task Completion Checklist</strong></h7>
+    <p><strong>developer assessment points:</strong></p>
+<ol>
+    <li>form structure and validation</li>
+    <ul>
+        <li>all inputs types implemented correctly</li>
+        <li>required field validation in place</li>
+        <li>proper form organization with fieldsets</li>
+        <li>accessbility labels and association</li>
+    </ul>
+    <li>table complexity</li>
+    <ul>
+        <li>multiple colspan and rowspan implemented</li>
+        <li>proper table and structure</li>
+        <li>captions and footer elements</li>
+        <li>semantic table markup</li>
+    </ul>
+    <li>list structure</li>
+    <ol>
+        <li>nested unordered lists for hierarchy</li>
+        <li>ordered lists for sequential orders</li>
+        <li>mixed list types appropriately</li>
+    </ol>
+    <li>html 5 semantic elements</li>
+    <ul>
+        <li>proper use of header, main section tags</li>
+        <li>appropriate heading hierarchy</li>
+        <li>field set and legend using</li>
+    </ul>
+</ol>
+<p><strong>Note:</strong> This is a complex html assessment designed to test advanced form handling, table structure, and semantic html knowlwdge. No css and javascript required- Focus on clean semantic html structure.</p>
+</body>
+
+</html>
