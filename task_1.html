@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-1</title>
+</head>
+
+<body>
+    <h1>Survey form</h1>
+    <hr>
+    <form action="review.html">
+        <fieldset>
+            <legend>personal information</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required> <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>preferences</legend>
+            <p>Choose your favoruite language:</p>
+            <input type="radio" name="language" id="html" value="html">
+            <label for="html">HTML</label>
+            <br>
+            <input type="radio" name="language" id="css" value="css">
+            <label for="css">CSS</label>
+            <br>
+            <input type="radio" name="language" id="javascript" value="javascript">
+            <label for="javascript">JavaScript</label>
+            <br>
+            <p>Select your interests:</p>
+            <input type="checkbox" name="interest" id="front" value="frontend">
+            <label for="front">frontend</label>
+            <br>
+            <input type="checkbox" name="interest" id="back" value="backend">
+            <label for="back">backend</label>
+            <br>
+            <input type="checkbox" name="interest" id="design" value="design">
+            <label for="design">design</label>
+            <br>
+            <label for="experience">Experience level</label>
+            <select name="Experience" id="experience">
+                <option value="select">select</option>
+                <option value="beginner">beginner</option>
+                <option value="intermediate">intermediate</option>
+                <option value="expert">expert</option>
+            </select>
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>feedback</legend>
+            <label for="bio">your comments:</label><br>
+            <textarea name="comment" id="bio"></textarea>
+        </fieldset>
+        <details> <p>Estimated completion:<progress value="70" max="100"></progress></p>
+            <summary> see form progress </summary>
+        </details>
+        <br>
+        <input type="submit" value="review your answers">
+    </form>
+</body>
+
+</html>
